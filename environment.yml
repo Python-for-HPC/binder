@@ -1,0 +1,5 @@
+channels:
+  - python-for-hpc
+  - conda-forge
+dependencies:
+  - pyomp
