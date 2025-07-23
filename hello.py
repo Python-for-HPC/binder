@@ -2,7 +2,7 @@ from numba.openmp import njit
 from numba.openmp import openmp_context as openmp
 from numba.openmp import omp_get_num_threads, omp_get_thread_num
 
-@njit()
+@njit
 def test():
     with openmp("parallel"):
         print("Hello from thread", omp_get_thread_num(), "/", omp_get_num_threads())
